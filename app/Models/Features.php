@@ -13,6 +13,7 @@ class Features extends Model
 
 
     public function plan(){
-        return $this->hasMany(Plan::class);
+        // return $this->hasMany(Plan::class);
+        return $this->belongsTo(Plan::class);
     }
 }
